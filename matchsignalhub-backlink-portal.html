@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en-PH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Match Signal Hub | Backlink Opportunity Portal</title>
+  <meta name="description" content="A GitHub Pages-ready backlink opportunity portal for Match Signal Hub, covering NBA, FIBA, PBA, WNBA, EuroLeague, NCAA and basketball intelligence pages.">
+  <meta name="keywords" content="Match Signal Hub backlinks, basketball SEO, NBA backlinks, FIBA backlinks, PBA backlinks">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="bingbot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="language" content="en-PH">
+  <meta name="author" content="Match Signal Hub Com">
+  <meta name="creator" content="Match Signal Hub Com">
+  <meta name="publisher" content="Match Signal Hub Com">
+  <meta name="application-name" content="Match Signal Hub Backlink Portal">
+  <meta name="generator" content="https://matchsignalhub.com/">
+  <meta name="theme-color" content="#0f766e">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="website-build" content="msh-backlink-portal-v2.0-github-ready">
+  <meta property="og:title" content="Match Signal Hub | Backlink Opportunity Portal">
+  <meta property="og:description" content="Basketball SEO backlink opportunity dashboard for Match Signal Hub league pages.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Match Signal Hub | Backlink Opportunity Portal">
+  <meta name="twitter:description" content="GitHub Pages-ready backlink opportunity dashboard for basketball SEO growth.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&h=630&q=80">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6fbff;
+      --surface:#ffffff;
+      --surface-2:#eef8f7;
+      --text:#061726;
+      --muted:#5e7385;
+      --line:#d7e6ef;
+      --green:#0f766e;
+      --blue:#1363df;
+      --cyan:#0ea5e9;
+      --gold:#f59e0b;
+      --red:#ef4444;
+      --dark:#061726;
+      --radius:22px;
+      --shadow:0 18px 46px rgba(6,23,38,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:
+        radial-gradient(circle at top left, rgba(14,165,233,.16), transparent 28rem),
+        radial-gradient(circle at top right, rgba(15,118,110,.14), transparent 30rem),
+        var(--bg);
+      color:var(--text);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+    a{color:var(--blue);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .navbar{
+      background:rgba(255,255,255,.92)!important;
+      backdrop-filter:blur(18px);
+      border-bottom:1px solid var(--line);
+    }
+    .brand-mark{
+      width:44px;height:44px;border-radius:15px;
+      display:grid;place-items:center;
+      color:#fff;font-weight:900;font-size:.82rem;
+      background:linear-gradient(135deg,var(--green),var(--blue));
+      box-shadow:0 12px 26px rgba(19,99,223,.24);
+    }
+    .hero{padding:118px 0 56px;overflow:hidden}
+    .hero-shell{
+      border-radius:34px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.94);
+      box-shadow:var(--shadow);
+    }
+    .hero-copy{padding:48px}
+    .hero-visual{
+      min-height:480px;
+      background:
+        linear-gradient(135deg, rgba(6,23,38,.22), rgba(15,118,110,.34)),
+        url("https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1500&q=80") center/cover;
+      position:relative;
+    }
+    .hero-visual .float-card{
+      position:absolute;
+      left:28px;right:28px;bottom:28px;
+      background:rgba(255,255,255,.92);
+      border:1px solid rgba(255,255,255,.5);
+      border-radius:24px;
+      padding:22px;
+      backdrop-filter:blur(18px);
+    }
+    .badge-soft{
+      display:inline-flex;align-items:center;gap:.45rem;
+      padding:.55rem .82rem;
+      border-radius:999px;
+      background:#e7f7f5;
+      color:#0f766e;
+      font-weight:800;
+      border:1px solid #c4ebe5;
+      font-size:.92rem;
+    }
+    .section{padding:70px 0}
+    .surface{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:0 10px 28px rgba(6,23,38,.055);
+    }
+    .card-hover{transition:transform .2s ease, box-shadow .2s ease}
+    .card-hover:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .muted{color:var(--muted)}
+    .stat{
+      font-size:clamp(2.2rem,4vw,3.5rem);
+      font-weight:900;
+      line-height:1;
+      letter-spacing:-.055em;
+    }
+    .btn-main{
+      border:0;
+      background:linear-gradient(135deg,var(--green),var(--blue));
+      color:white!important;
+      border-radius:999px;
+      font-weight:900;
+      padding:.9rem 1.2rem;
+      box-shadow:0 14px 34px rgba(19,99,223,.22);
+    }
+    .btn-main:hover{text-decoration:none;filter:brightness(.97)}
+    .btn-lightish{
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--text)!important;
+      border-radius:999px;
+      font-weight:900;
+      padding:.9rem 1.2rem;
+    }
+    .url-pill{
+      display:inline-flex;
+      max-width:100%;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      padding:.42rem .7rem;
+      border-radius:999px;
+      background:#eef5ff;
+      color:#164e91;
+      font-size:.82rem;
+      font-weight:700;
+    }
+    .score{
+      width:54px;height:54px;border-radius:18px;
+      display:grid;place-items:center;
+      font-weight:900;
+      color:#fff;
+      background:linear-gradient(135deg,var(--green),var(--blue));
+    }
+    .platform-tag{
+      display:inline-flex;
+      align-items:center;
+      gap:.35rem;
+      padding:.4rem .62rem;
+      background:#f3f8fb;
+      border:1px solid var(--line);
+      border-radius:999px;
+      font-weight:700;
+      font-size:.84rem;
+      margin:.2rem;
+    }
+    .anchor-box{
+      background:#071827;
+      color:#e8fbff;
+      border-radius:18px;
+      padding:18px;
+      font-size:.92rem;
+      overflow:auto;
+    }
+    .timeline{position:relative;padding-left:25px}
+    .timeline::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:var(--line)}
+    .timeline-item{
+      position:relative;
+      padding:18px 20px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+      margin-bottom:18px;
+    }
+    .timeline-item::before{
+      content:"";
+      width:14px;height:14px;border-radius:50%;
+      position:absolute;left:-25px;top:24px;
+      background:var(--blue);
+      border:3px solid #fff;
+      box-shadow:0 0 0 4px rgba(19,99,223,.16);
+    }
+    .table>:not(caption)>*>*{padding:1rem}
+    .risk-low{color:#15803d;font-weight:900}
+    .risk-med{color:#b45309;font-weight:900}
+    .risk-high{color:#b91c1c;font-weight:900}
+    footer{background:var(--dark);color:#dff7ff;padding:48px 0}
+    footer a{color:#dff7ff}
+    @media(max-width:991px){
+      .hero{padding-top:96px}
+      .hero-copy{padding:30px}
+      .hero-visual{min-height:330px}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#top" aria-label="Match Signal Hub Backlink Portal">
+      <span class="brand-mark">MSH</span>
+      <span class="fw-bold">Backlink Portal</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Open navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navMenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#targets">Targets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#opportunities">Opportunities</a></li>
+        <li class="nav-item"><a class="nav-link" href="#anchors">Anchors</a></li>
+        <li class="nav-item"><a class="nav-link" href="#calendar">Calendar</a></li>
+        <li class="nav-item"><a class="nav-link" href="#github">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="top" class="hero">
+  <div class="container">
+    <div class="hero-shell">
+      <div class="row g-0 align-items-stretch">
+        <div class="col-lg-6 hero-copy">
+          <span class="badge-soft mb-4">🔗 Basketball SEO Backlink Builder</span>
+          <h1 class="display-4 fw-bold mb-3" style="font-weight:900;letter-spacing:-.055em;">
+            Match Signal Hub Backlink Opportunity Portal
+          </h1>
+          <p class="lead muted mb-4">
+            A one-file GitHub Pages dashboard for planning safe, relevant and natural backlinks to your homepage,
+            FIBA, NBA, PBA, WNBA, EuroLeague and NCAA pages.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-main" href="#targets">View Link Targets</a>
+            <a class="btn btn-lightish" href="#calendar">30-Day Plan</a>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-visual">
+          <div class="float-card">
+            <div class="row g-3 text-center">
+              <div class="col-4"><div class="stat">7</div><div class="muted fw-bold">Main URLs</div></div>
+              <div class="col-4"><div class="stat">30</div><div class="muted fw-bold">Day Plan</div></div>
+              <div class="col-4"><div class="stat">12</div><div class="muted fw-bold">Channels</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="section pt-4">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-lg-3"><div class="surface p-4"><div class="stat">70%</div><div class="muted fw-bold">Branded Anchors</div></div></div>
+      <div class="col-6 col-lg-3"><div class="surface p-4"><div class="stat">20%</div><div class="muted fw-bold">Partial Match</div></div></div>
+      <div class="col-6 col-lg-3"><div class="surface p-4"><div class="stat">10%</div><div class="muted fw-bold">Exact Match</div></div></div>
+      <div class="col-6 col-lg-3"><div class="surface p-4"><div class="stat">0%</div><div class="muted fw-bold">Spam Drops</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="targets" class="section">
+  <div class="container">
+    <span class="badge-soft mb-3">Primary Link Targets</span>
+    <h2 class="display-6 fw-bold mb-4">Pages to Promote</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-4">
+        <article class="surface p-4 h-100 card-hover">
+          <div class="d-flex align-items-center gap-3 mb-3"><div class="score">01</div><div><h3 class="h5 fw-bold mb-1">Homepage</h3><span class="url-pill">matchsignalhub.com</span></div></div>
+          <p class="muted">Best for branded backlinks, basketball intelligence mentions, project profiles and resource pages.</p>
+          <a href="https://matchsignalhub.com/" target="_blank" rel="noopener">Open target →</a>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <article class="surface p-4 h-100 card-hover">
+          <div class="d-flex align-items-center gap-3 mb-3"><div class="score">02</div><div><h3 class="h5 fw-bold mb-1">FIBA Page</h3><span class="url-pill">/pages/fiba.html</span></div></div>
+          <p class="muted">Best for FIBA rankings, global basketball events, national teams, fixtures and international basketball articles.</p>
+          <a href="https://matchsignalhub.com/pages/fiba.html" target="_blank" rel="noopener">Open target →</a>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <article class="surface p-4 h-100 card-hover">
+          <div class="d-flex align-items-center gap-3 mb-3"><div class="score">03</div><div><h3 class="h5 fw-bold mb-1">NBA Page</h3><span class="url-pill">/pages/nba.html</span></div></div>
+          <p class="muted">Best for NBA scores, teams, game coverage, player information, schedules and data-driven fan guides.</p>
+          <a href="https://matchsignalhub.com/pages/nba.html" target="_blank" rel="noopener">Open target →</a>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <article class="surface p-4 h-100 card-hover">
+          <div class="d-flex align-items-center gap-3 mb-3"><div class="score">04</div><div><h3 class="h5 fw-bold mb-1">PBA Page</h3><span class="url-pill">/pages/pba.html</span></div></div>
+          <p class="muted">Best for Philippine basketball, PBA fan resources, Pinoy sports blogs and local community content.</p>
+          <a href="https://matchsignalhub.com/pages/pba.html" target="_blank" rel="noopener">Open target →</a>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <article class="surface p-4 h-100 card-hover">
+          <div class="d-flex align-items-center gap-3 mb-3"><div class="score">05</div><div><h3 class="h5 fw-bold mb-1">WNBA Page</h3><span class="url-pill">/pages/wnba.html</span></div></div>
+          <p class="muted">Best for women’s basketball coverage, WNBA team pages, player stories and standings resources.</p>
+          <a href="https://matchsignalhub.com/pages/wnba.html" target="_blank" rel="noopener">Open target →</a>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <article class="surface p-4 h-100 card-hover">
+          <div class="d-flex align-items-center gap-3 mb-3"><div class="score">06</div><div><h3 class="h5 fw-bold mb-1">EuroLeague Page</h3><span class="url-pill">/pages/euroleague.html</span></div></div>
+          <p class="muted">Best for European basketball, fixtures, club coverage, international fans and league data references.</p>
+          <a href="https://matchsignalhub.com/pages/euroleague.html" target="_blank" rel="noopener">Open target →</a>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <article class="surface p-4 h-100 card-hover">
+          <div class="d-flex align-items-center gap-3 mb-3"><div class="score">07</div><div><h3 class="h5 fw-bold mb-1">NCAA Page</h3><span class="url-pill">/pages/ncaa.html</span></div></div>
+          <p class="muted">Best for college basketball schedules, rankings, teams, players and fan information pages.</p>
+          <a href="https://matchsignalhub.com/pages/ncaa.html" target="_blank" rel="noopener">Open target →</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="opportunities" class="section bg-white border-top border-bottom">
+  <div class="container">
+    <span class="badge-soft mb-3">Backlink Channels</span>
+    <h2 class="display-6 fw-bold mb-4">Opportunity Matrix</h2>
+    <div class="surface table-responsive">
+      <table class="table align-middle mb-0">
+        <thead>
+          <tr>
+            <th>Channel</th>
+            <th>Best Page</th>
+            <th>Content Angle</th>
+            <th>Risk</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>GitHub Pages</td><td>Homepage + all league pages</td><td>Project portal, README site, technical documentation</td><td class="risk-low">Low</td></tr>
+          <tr><td>Medium Articles</td><td>FIBA, NBA, PBA</td><td>Basketball data guides, fan explainers, league coverage summaries</td><td class="risk-low">Low</td></tr>
+          <tr><td>LinkedIn Posts</td><td>Homepage</td><td>Product update, SEO milestone, API-powered sports website build</td><td class="risk-low">Low</td></tr>
+          <tr><td>Pinterest Pins</td><td>All league pages</td><td>Visual cards for scores, rankings, fixtures and basketball hubs</td><td class="risk-low">Low</td></tr>
+          <tr><td>Basketball Forums</td><td>PBA, NBA, FIBA</td><td>Helpful resource sharing inside real discussions</td><td class="risk-med">Medium</td></tr>
+          <tr><td>Resource Lists</td><td>Homepage, FIBA, NBA</td><td>Basketball data resources and live score website lists</td><td class="risk-low">Low</td></tr>
+          <tr><td>Guest Posts</td><td>NBA, FIBA, EuroLeague</td><td>Long-form basketball technology and data articles</td><td class="risk-med">Medium</td></tr>
+          <tr><td>Reddit / Communities</td><td>Only when relevant</td><td>Answer-first participation, link only when useful</td><td class="risk-high">High</td></tr>
+          <tr><td>Quora Answers</td><td>Homepage, NBA, PBA</td><td>Answer basketball data questions naturally</td><td class="risk-med">Medium</td></tr>
+          <tr><td>Business Profiles</td><td>Homepage</td><td>Company/project profile with branded link</td><td class="risk-low">Low</td></tr>
+          <tr><td>Sports Directories</td><td>Homepage + league pages</td><td>Basketball website directory submission</td><td class="risk-med">Medium</td></tr>
+          <tr><td>Press Release</td><td>Homepage</td><td>Launch update for basketball intelligence platform</td><td class="risk-med">Medium</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="anchors" class="section">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5">
+        <span class="badge-soft mb-3">Anchor Text System</span>
+        <h2 class="display-6 fw-bold">Use Natural Anchor Diversity</h2>
+        <p class="muted">Keep most links branded. Use exact-match anchors sparingly to avoid an unnatural backlink footprint.</p>
+        <div class="surface p-4">
+          <div class="mb-3"><strong>Recommended ratio</strong></div>
+          <div class="d-flex justify-content-between"><span>Branded / URL anchors</span><strong>70%</strong></div>
+          <div class="progress mb-3" style="height:12px;"><div class="progress-bar" style="width:70%;background:linear-gradient(90deg,var(--green),var(--blue));"></div></div>
+          <div class="d-flex justify-content-between"><span>Partial-match anchors</span><strong>20%</strong></div>
+          <div class="progress mb-3" style="height:12px;"><div class="progress-bar" style="width:20%;background:linear-gradient(90deg,var(--green),var(--blue));"></div></div>
+          <div class="d-flex justify-content-between"><span>Exact-match anchors</span><strong>10%</strong></div>
+          <div class="progress" style="height:12px;"><div class="progress-bar" style="width:10%;background:linear-gradient(90deg,var(--green),var(--blue));"></div></div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="anchor-box">
+<pre><code>BRANDED ANCHORS
+- Match Signal Hub
+- MatchSignalHub.com
+- Match Signal Hub basketball platform
+- visit Match Signal Hub
+
+PARTIAL-MATCH ANCHORS
+- basketball intelligence hub
+- NBA scores and basketball data
+- FIBA basketball coverage
+- PBA basketball coverage for PH fans
+- WNBA scores and standings
+- EuroLeague basketball fixtures
+- NCAA basketball schedules
+
+LIMITED EXACT-MATCH ANCHORS
+- NBA live scores
+- FIBA basketball rankings
+- PBA live scores Philippines
+- WNBA standings
+- EuroLeague fixtures
+- NCAA basketball schedules</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="content" class="section bg-white border-top border-bottom">
+  <div class="container">
+    <span class="badge-soft mb-3">Ready Article Ideas</span>
+    <h2 class="display-6 fw-bold mb-4">Content That Can Earn Links</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-4"><div class="surface p-4 h-100"><h3 class="h5 fw-bold">Best Basketball Data Pages for Fans</h3><p class="muted">Link to homepage, NBA, FIBA, PBA, WNBA, EuroLeague and NCAA naturally.</p></div></div>
+      <div class="col-md-6 col-xl-4"><div class="surface p-4 h-100"><h3 class="h5 fw-bold">How PH Fans Follow Global Basketball</h3><p class="muted">Strong angle for PBA, NBA and FIBA pages with Philippine audience relevance.</p></div></div>
+      <div class="col-md-6 col-xl-4"><div class="surface p-4 h-100"><h3 class="h5 fw-bold">70% API + 30% Editorial Sports Website</h3><p class="muted">Good for GitHub, LinkedIn, Medium and technical case study backlinks.</p></div></div>
+      <div class="col-md-6 col-xl-4"><div class="surface p-4 h-100"><h3 class="h5 fw-bold">Where to Follow FIBA Basketball</h3><p class="muted">Target FIBA rankings, teams, events, fixtures and results pages.</p></div></div>
+      <div class="col-md-6 col-xl-4"><div class="surface p-4 h-100"><h3 class="h5 fw-bold">NBA Data Guide for Modern Fans</h3><p class="muted">Use NBA page as the primary target with homepage as branded support.</p></div></div>
+      <div class="col-md-6 col-xl-4"><div class="surface p-4 h-100"><h3 class="h5 fw-bold">Women’s Basketball Resource Guide</h3><p class="muted">Use WNBA page as the main backlink target with natural resource framing.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="calendar" class="section">
+  <div class="container">
+    <span class="badge-soft mb-3">30-Day Backlink Plan</span>
+    <h2 class="display-6 fw-bold mb-4">Execution Calendar</h2>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="timeline">
+          <div class="timeline-item"><h3 class="h5 fw-bold">Week 1 — Foundation</h3><p class="muted mb-0">Publish GitHub Pages portal, update README, create LinkedIn post, create 7 Pinterest pins, add branded homepage link.</p></div>
+          <div class="timeline-item"><h3 class="h5 fw-bold">Week 2 — Content Links</h3><p class="muted mb-0">Publish 2 Medium articles: one for NBA/FIBA/PBA and one for WNBA/EuroLeague/NCAA.</p></div>
+          <div class="timeline-item"><h3 class="h5 fw-bold">Week 3 — Community Links</h3><p class="muted mb-0">Join real basketball discussions. Share links only where they answer the topic or add resource value.</p></div>
+          <div class="timeline-item"><h3 class="h5 fw-bold">Week 4 — Resource Outreach</h3><p class="muted mb-0">Submit to sports resource pages, project profiles, data directories and relevant basketball website lists.</p></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="surface p-4 h-100">
+          <h3 class="h5 fw-bold mb-3">Monthly Output Target</h3>
+          <ul class="mb-4">
+            <li>1 GitHub Pages backlink hub</li>
+            <li>2 Medium / blog articles</li>
+            <li>4 LinkedIn update posts</li>
+            <li>7 Pinterest visual pins</li>
+            <li>5 resource page outreach attempts</li>
+            <li>5 community participation posts</li>
+          </ul>
+          <p class="muted mb-0">Focus on quality and relevance. A smaller number of clean backlinks is safer than many low-quality link drops.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="github" class="section bg-white border-top">
+  <div class="container">
+    <span class="badge-soft mb-3">GitHub Ready</span>
+    <h2 class="display-6 fw-bold mb-4">Push This Page</h2>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="surface p-4 h-100">
+          <h3 class="h5 fw-bold">File Structure</h3>
+          <div class="anchor-box"><pre><code>your-repository/
+└── index.html</code></pre></div>
+          <p class="muted mb-0 mt-3">Upload this file as <strong>index.html</strong> in the root folder of your repository.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="surface p-4 h-100">
+          <h3 class="h5 fw-bold">GitHub Pages Settings</h3>
+          <div class="anchor-box"><pre><code>Repository → Settings → Pages
+Source: Deploy from a branch
+Branch: main
+Folder: /root
+Save</code></pre></div>
+          <p class="muted mb-0 mt-3">Live URL format: <strong>https://username.github.io/repository/</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="brand-mark">MSH</span>
+          <strong>Match Signal Hub Backlink Opportunity Portal</strong>
+        </div>
+        <p class="mb-0" style="color:#a8c8d9;">One-file GitHub Pages dashboard for backlink planning, SEO support and basketball page promotion.</p>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <a href="#top" class="me-3">Back to top</a>
+        <a href="https://matchsignalhub.com/" target="_blank" rel="noopener">Main website</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const nav = document.getElementById('navMenu');
+  document.querySelectorAll('.navbar a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+      if (nav.classList.contains('show')) {
+        bootstrap.Collapse.getOrCreateInstance(nav).hide();
+      }
+    });
+  });
+</script>
+</body>
+</html>
